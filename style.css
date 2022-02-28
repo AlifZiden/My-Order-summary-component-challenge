@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,700;1,900&display=swap');
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --light-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 89.114px 1rem;
+}
+.container .order-summary {
+    background: var(--light-pale-blue);    
+    width: 376.864px;
+    height: 637.866px;
+    border-radius: 10px;
+}
+.container .order-summary .img img {
+    max-width: 375px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.container .order-summary .title h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--Dark-blue);
+}
+.container .order-summary .desc p {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    margin: 1rem;
+    color: var(--Desaturated-blue);
+}
+.container .order-summary .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.container .order-summary .price a {
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    top: -23px;
+    
+}
+.container .order-summary .price a:hover {
+    color: var(--Desaturated-blue);
+    
+}
+
+.container .order-summary .price .tag
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.container .order-summary .price .tag p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+.container .order-summary .price .tag span {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+}
+.container .order-summary .price .tag img 
+{
+    margin-right: 1rem;
+}
+.container .order-summary .btn-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.container .order-summary .btn-cancel button {
+    padding: .8rem 4rem;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 2px 4px 2px 1px rgb(0 0 255 / 20%);
+}
+.container .order-summary .btn-cancel button:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+.container .order-summary .btn-cancel p {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--Desaturated-blue);
+    margin-top: 1rem;
+    font-weight: 700;
+    
+}
+.container .order-summary .btn-cancel p:hover {
+    color: black;
+    cursor: pointer;    
+}
+.attribution {
+    margin-top: 2rem;
+}
